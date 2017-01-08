@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Colorgasm</title>
+</head>
+
+<body>
+
+
+  <script>
+   // Create DIV Element
+var div = document.createElement('DIV');
+// Add height to Element
+div.style.height = '100vh';
+// Append Element to DOM
+document.body.appendChild(div); 
+// Add Event Listener
+div.addEventListener('mousemove', function(event) {
+  console.log(event);
+  var x = event.clientX;
+  var y = event.clientY;
+  div.style.backgroundColor = 'rgb(' + x + ', ' + y + ', 100)';
+});
+
+  </script>
+    
+</body>
+</html>
